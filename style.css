@@ -2,11 +2,16 @@
 *{
     font-family: 'Montserrat', sans-serif;
 }
-body{
-  background: linear-gradient(to top left, #FFFFFF 50%, #9dd8ff 80%);
-}
 
 @media (min-width:900px){
+  body{
+    background: linear-gradient(to top left, #FFFFFF 50%, #9dd8ff 80%);
+  }
+  .titlecontainer{
+    display: flex;
+    justify-content: center;
+    color:#425da7;
+  }
   ::-webkit-scrollbar{
     appearance: none;
   }
@@ -134,8 +139,8 @@ body{
       margin:15px;
       min-width:232px;
       width:232px;
-      max-height:300px;
-      min-height:300px;
+      max-height:330px;
+      min-height:330px;
       padding:20px;
       background: linear-gradient(to top left, #FFFFFF 10%, #8bc0ec 90%);
       transition: box-shadow 0.5s;
@@ -218,6 +223,23 @@ body{
       font-weight: 610;
       transition: color 0.5s;
     }
+    .product .colorpicker{
+      margin:8px 0px;
+      font-size: 18px;
+      font-weight: 610;
+      padding:2px 10px;
+      border-radius: 7px;
+      outline:none;
+      border:none;
+      background: linear-gradient(to top left, #FFFFFF 0%, #8bd6f7 50%);
+      box-shadow: 0px 2px 25px 3px rgba(0, 0, 0, 0.25);
+      color:#425da7;
+      transition: box-shadow 0.5s;
+      width: 75%;
+    }
+    .product .colorpicker:hover{
+      box-shadow: 0px 2px 25px 3px rgba(0, 0, 0, 0.45);
+    }
     footer{
       background: linear-gradient(to top left, #5e4eb1 0%, #3c3170 50%);
       display:flex;
@@ -267,6 +289,22 @@ body{
 }
 
 @media (max-width:800px){
+  body{
+    background-color: #FFFFFF;
+    background: linear-gradient(to left, #FFFFFF 50%, #9dd8ff 80%);
+    background-repeat: no-repeat;
+  }
+  .titlecontainer{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    color:#425da7;
+    text-align: center;
+    margin:2em 12em;
+  }
+  .titlecontainer h1{
+    margin:0px;
+  }
   ::-webkit-scrollbar{
     appearance: none;
   }
@@ -287,21 +325,26 @@ body{
   nav{
     width:150px;
   }
-  nav .buttoncontainer{
+  nav .buttondoublecontainer .buttoncontainer{
     display: inline-block;
     align-items: center;
     justify-items:center;
     position: relative;
     z-index:1;
   }
+  nav .buttondoublecontainer{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+  }
   nav .buttoncontainer button{
     display: flex;
     justify-content: center;
     align-items:center;
     padding:10px 10px;
-    width:24.5em;
     height:50px;
-    margin: 10px 20px;
+    margin: 10px 30px;
+    width:24.5em;
     border:none;
     outline:none;
     border-radius:15px;
@@ -375,16 +418,16 @@ nav .navbutton .dropdown .how-to-buy .how-to-buy-box{
 
   .productcontainer{
     display: inline-block;
-    margin:3.2em;
+    margin:2em 3.2em;
   }
   .product{
     display:inline-block;
     border-radius:16px;
     box-shadow: 0px 2px 25px 3px rgba(0, 0, 0, 0.2);
-    margin:15px 0px;
+    margin:12px 0px;
     width:230px;
-    max-height:300px;
-    min-height:300px;
+    max-height:330px;
+    min-height:330px;
     padding:20px;
     background: linear-gradient(to top left, #FFFFFF 10%, #78D1F7 90%);
     transition: box-shadow 0.5s;
@@ -445,12 +488,29 @@ nav .navbutton .dropdown .how-to-buy .how-to-buy-box{
     /* Vamos a añadir esto 👇 */
     scroll-snap-align: center;
   }
+  .product .colorpicker{
+    margin:8px 0px;
+    font-size: 18px;
+    font-weight: 610;
+    padding:2px 10px;
+    border-radius: 7px;
+    outline:none;
+    border:none;
+    background: linear-gradient(to top left, #FFFFFF 0%, #8bd6f7 50%);
+    box-shadow: 0px 2px 25px 3px rgba(0, 0, 0, 0.25);
+    color:#425da7;
+    transition: box-shadow 0.5s;
+    width: 75%;
+  }
+  .product .colorpicker:hover{
+    box-shadow: 0px 2px 25px 3px rgba(0, 0, 0, 0.45);
+  }
   footer{
     background: linear-gradient(to top left, #5e4eb1 0%, #3c3170 50%);
     display:inline-block;
     justify-content: center;
     align-items:center;
-    width: 100%;
+    width:23.8em;
     padding:15px 0px;
     border:none;
     margin-top:50px;
