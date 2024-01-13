@@ -329,22 +329,17 @@
     display: inline-block;
     align-items: center;
     justify-items:center;
-    position: relative;
     z-index:1;
   }
-  nav .buttondoublecontainer{
-    display: flex;
-    align-items: center;
-    width: fit-content;
-  }
-  nav .buttoncontainer button{
+  nav .buttondoublecontainer .buttoncontainer button{
     display: flex;
     justify-content: center;
     align-items:center;
     padding:10px 10px;
     height:50px;
     margin: 10px 30px;
-    width:24.5em;
+    min-width: 320px;
+    width:90vw;
     border:none;
     outline:none;
     border-radius:15px;
@@ -352,7 +347,6 @@
     background: linear-gradient(to top left, #FFFFFF 0%, #6fbcf0 64%);
     box-shadow: 0px 2px 25px 3px rgba(0, 0, 0, 0.15);
     transition: box-shadow 0.5s;
-    position: relative;
   }
   nav .navbutton button span{
     font-size:190%;
@@ -424,8 +418,11 @@ nav .navbutton .dropdown .how-to-buy .how-to-buy-box{
     display:inline-block;
     border-radius:16px;
     box-shadow: 0px 2px 25px 3px rgba(0, 0, 0, 0.2);
-    margin:12px 0px;
-    width:230px;
+    margin:12px 4vw;
+    margin-left: 6vw;
+    width:60vw;
+    min-width: 232px;
+    max-width: 232px;
     max-height:330px;
     min-height:330px;
     padding:20px;
