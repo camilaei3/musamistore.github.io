@@ -242,7 +242,7 @@ body{
       box-shadow: 0px 2px 25px 3px rgba(0, 0, 0, 0.25);
       color:#425da7;
       transition: box-shadow 0.5s;
-      width: 100%;
+      width: 97%;
       }
     .product .colorpicker:hover{
       box-shadow: 0px 2px 25px 3px rgba(0, 0, 0, 0.45);
@@ -364,7 +364,6 @@ nav .navbutton .dropdown .how-to-buy:hover>.how-to-buy-box{
   top:110%;
   width:350px;
   box-shadow: 0px 2px 25px 3px rgba(0, 0, 0, 0.15);
-  z-index:1;
 }
 nav .navbutton .dropdown .how-to-buy:hover>.how-to-buy-box p{
   margin:20px;
