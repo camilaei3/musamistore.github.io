@@ -71,6 +71,7 @@ body{
   }
   nav .navbutton .dropdown .how-to-buy{
     width: 290px;
+    color:#528ea8;
   }
   nav .navbutton .dropdown .how-to-buy:hover>.how-to-buy-box{
     display:flex;
@@ -82,6 +83,7 @@ body{
     right:6.5%;
     width:400px;
     box-shadow: 0px 2px 25px 3px rgba(0, 0, 0, 0.15);
+    color:#528ea8;
   }
   nav .navbutton .dropdown .how-to-buy:hover>.how-to-buy-box p{
     margin:20px;
@@ -92,6 +94,7 @@ body{
   }
   nav .navbutton .dropdown .how-to-buy .how-to-buy-box{
     display:none;
+    color:#528ea8;
   }
     .dropdown {
       display: inline-block;
@@ -111,6 +114,8 @@ body{
       text-align: center;
       background: #FFFFFF;
       background: linear-gradient(to top, #FFFFFF 44%, #96d5ff 100%);
+      color:#4694c9;
+      font-weight: 700;
     }
     .dropdown-content a {
       display: block;
@@ -296,6 +301,10 @@ body{
 }
 
 @media (max-width:800px){
+  body{
+    display: block;
+    justify-items: center;
+  }
   .titlecontainer{
     display: flex;
     justify-content: center;
@@ -303,6 +312,7 @@ body{
     color:#425da7;
     text-align: center;
     margin:2em 12em;
+    height: fit-content;
   }
   .titlecontainer h1{
     margin:0px;
@@ -315,6 +325,9 @@ body{
     justify-items: center;
     width:170px;
   }
+  nav{
+    height:fit-content;
+  }
   nav img{
     min-width: 260px;
     width:260px;
@@ -324,16 +337,7 @@ body{
     justify-self: center;
     margin-left:3.8em;
  }
-  nav{
-    width:150px;
-  }
-  nav .buttondoublecontainer .buttoncontainer{
-    display: inline-block;
-    align-items: center;
-    justify-items:center;
-    z-index:1;
-  }
-  nav .buttondoublecontainer .buttoncontainer button{
+  nav .buttoncontainer button{
     display: flex;
     justify-content: center;
     align-items:center;
@@ -394,6 +398,8 @@ nav .navbutton .dropdown .how-to-buy .how-to-buy-box{
     text-align: center;
     background: #FFFFFF;
     background: linear-gradient(to top, #FFFFFF 44%, #d2eaf5 100%);
+    color:#4694c9;
+    font-weight: 700;
   }
   .dropdown-content a {
     display: block;
@@ -411,22 +417,18 @@ nav .navbutton .dropdown .how-to-buy .how-to-buy-box{
     color: #ffffff;
     background-color: #78d1f7;
   }
-
   .productcontainer{
     display: inline-block;
-    margin:2em 3.2em;
+    margin:2em 3em;
   }
   .product{
     display:inline-block;
     border-radius:16px;
     box-shadow: 0px 2px 25px 3px rgba(0, 0, 0, 0.2);
-    margin:12px 4vw;
-    transform: translate(0.1vw, 0%);
-    width:60vw;
-    min-width: 232px;
-    max-width: 232px;
-    max-height:380px;
-    min-height:380px;
+    margin:10px 0px;
+    width:230px;
+    max-height:3700px;
+    min-height:370px;
     padding:20px;
     background: linear-gradient(to top left, #FFFFFF 10%, #78D1F7 90%);
     transition: box-shadow 0.5s;
@@ -463,6 +465,7 @@ nav .navbutton .dropdown .how-to-buy .how-to-buy-box{
     width:232px;
     overflow-x: scroll;
     margin-bottom:10px;
+    justify-self: center;
   
     /* Vamos a añadir esto 👇 */
     scroll-snap-type: x mandatory;
@@ -512,42 +515,27 @@ nav .navbutton .dropdown .how-to-buy .how-to-buy-box{
   .product .colorpicker:hover{
     box-shadow: 0px 2px 25px 3px rgba(0, 0, 0, 0.45);
   }
-  footer{
-    background: linear-gradient(to top left, #5e4eb1 0%, #3c3170 50%);
-    display:inline-block;
-    justify-content: center;
-    align-items:center;
-    width:23.8em;
-    padding:15px 0px;
-    border:none;
-    margin-top:50px;
-    border-radius:15px;
-    box-shadow: 0px 2px 25px 3px rgba(0, 0, 0, 0.25);
-    transition: box-shadow 0.5s;
-  }
   footer:hover{
     box-shadow: 0px 2px 25px 3px rgba(0, 0, 0, 0.7);
   }
   footer .contact{
-    margin: 5px 30px;
-    margin-left:0px;
     display:flex;
     align-items:center;
   }
   footer .contact i{
-    font-size:50px;
+    font-size:3rem;
     margin: 0px 15px;
     color:#5e4eb1;
   }
   footer .contact a{
-    font-size:30px;
+    font-size:1.5rem;
     font-weight: 650;
     color:#7b66e6;
     text-decoration: none;
     animation: blinking 1s infinite;
   }
   footer .contact span{
-    font-size:30px;
+    font-size:1.5rem;
     font-weight: 650;
     color:#7b66e6;
   }
